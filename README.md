@@ -8,6 +8,10 @@
 
 `一款 vue3 进度条组件`
 
+## Demo
+
+[Live Demo](https://vue3-progress.netlify.app/)
+
 ## Install
 
 ```shell
@@ -24,7 +28,6 @@ import Vue3Progress from "vue3-progress";
 const options = {
   position: "fixed",
   height: "3px",
-  color: "#8bf6c7", // Default rainbow 缺省默认为彩虹色
 };
 
 createApp(App).use(Vue3Progress, options).mount("#app");
@@ -46,6 +49,18 @@ export default {
   },
 };
 </script>
+```
+
+## Custom Color
+
+`main.js`
+
+```diff
+const options = {
+  position: "fixed",
+  height: "3px",
++  color: "#8bf6c7", /* Set your color here 可设定自定义颜色 */
+};
 ```
 
 ## APIs

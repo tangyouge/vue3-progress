@@ -1,6 +1,6 @@
 {
   "name": "vue3-progress",
-  "version": "0.0.1-alpha3",
+  "version": "0.0.1-alpha4",
   "description": "A vue3 component of progress bar.",
   "main": "./dist/index.bundle.js",
   "scripts": {
