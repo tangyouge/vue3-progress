@@ -1,11 +1,11 @@
 {
   "name": "vue3-progress",
-  "version": "0.0.1-alpha4",
+  "version": "0.0.1-beta1",
   "description": "A vue3 component of progress bar.",
   "main": "./dist/index.bundle.js",
   "scripts": {
     "build": "webpack",
-    "postinstall": "echo vue3-progress 正在开发中.."
+    "postinstall": "echo ☘ vue3-progress"
   },
   "dependencies": {
     "vue": "^3.0.2"

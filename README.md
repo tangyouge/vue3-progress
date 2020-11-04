@@ -4,9 +4,9 @@
 
 [![license](https://img.shields.io/npm/l/vue3-progress?color=%2351bff4)](https://revolunet.mit-license.org/) [![npm](https://img.shields.io/npm/v/vue3-progress?color=%2333efc7)](https://www.npmjs.com/package/vue3-progress) [![downloads](https://img.shields.io/npm/dm/vue3-progress?color=%23ad43a7)](https://www.npmjs.com/package/vue3-progress)
 
-`A vue3 component of progress bar`
+`A vue3 component of progress bar the custom colors are supported`
 
-`一款 vue3 进度条组件`
+`一款 vue3 进度条组件 支持自定义喜欢的颜色`
 
 ## Demo
 
@@ -28,6 +28,7 @@ import Vue3Progress from "vue3-progress";
 const options = {
   position: "fixed",
   height: "3px",
+  // color: "<Your Color>",
 };
 
 createApp(App).use(Vue3Progress, options).mount("#app");
@@ -37,30 +38,32 @@ createApp(App).use(Vue3Progress, options).mount("#app");
 
 ```vue
 <template>
-  <vue3-progress />
-  <!-- Set it on the top -->
+  <div id="app">
+    <vue3-progress />
+    <router-view />
+  </div>
 </template>
 
 <script>
 export default {
   name: "App",
+  mounted() {
+    this.$progress.finish();
+  },
   created() {
     this.$progress.start();
+
+    this.$router.beforeEach((to, from, next) => {
+      this.$progress.start();
+      next();
+    });
+
+    this.$router.afterEach((to, from) => {
+      this.$progress.finish();
+    });
   },
 };
 </script>
-```
-
-## Custom Color
-
-`main.js`
-
-```diff
-const options = {
-  position: "fixed",
-  height: "3px",
-+  color: "#8bf6c7", /* Set your color here 可设定自定义颜色 */
-};
 ```
 
 ## APIs
@@ -77,16 +80,12 @@ this.$progress.finish() // finish the loading
 this.$progress.height(4) // resize the height of loading bar to 4px
 ```
 
-## Quick Debug
-
-```shell
-$ npm install -g @vue/cli # OR yarn global add @vue/cli
-
-$ vue create demo # select vue 3 preset
-
-$ cd demo # cd demo then install and use vue3-progress
-```
-
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
+
+## Links
+
+[Vue.js - The Progressive JavaScript Framework](https://vuejs.org/)
+
+[vue-ins-progress-bar 一款 ins 风格的 vue 进度条组件](https://github.com/meloalright/vue-ins-progress-bar)
