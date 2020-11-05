@@ -3,6 +3,7 @@
   "version": "0.0.1-beta1",
   "description": "A vue3 component of progress bar.",
   "main": "./dist/index.bundle.js",
+  "module": "./src/index.js",
   "scripts": {
     "build": "webpack",
     "postinstall": "echo ☘ vue3-progress"
