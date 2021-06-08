@@ -1,6 +1,6 @@
 {
   "name": "vue3-progress",
-  "version": "0.0.1-beta1",
+  "version": "0.0.1-beta2",
   "description": "A vue3 component of progress bar.",
   "main": "./dist/index.bundle.js",
   "module": "./src/index.js",
@@ -8,10 +8,9 @@
     "build": "webpack",
     "postinstall": "echo ☘ vue3-progress"
   },
-  "dependencies": {
-    "vue": "^3.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "vue": "^3.0.2",
     "@babel/core": "^7.12.3",
     "@vue/cli-plugin-babel": "^4.5.8",
     "@vue/compiler-sfc": "^3.0.0",
