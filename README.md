@@ -8,7 +8,7 @@
 
 `一款 vue3 进度条组件 支持自定义喜欢的颜色`
 
-This is Vue Component is now Type Script Compatible!
+This Vue Component is now Type Script Compatible!
 
 ## Demo
 
