@@ -4,9 +4,11 @@
 
 [![license](https://img.shields.io/npm/l/vue3-progress?color=%2351bff4)](https://revolunet.mit-license.org/) [![npm](https://img.shields.io/npm/v/vue3-progress?color=%2333efc7)](https://www.npmjs.com/package/vue3-progress) [![downloads](https://img.shields.io/npm/dm/vue3-progress?color=%23ad43a7)](https://www.npmjs.com/package/vue3-progress)
 
-`A vue3 component of progress bar the custom colors are supported`
+`A vue3 progress bar component in which custom colors are supported`
 
 `一款 vue3 进度条组件 支持自定义喜欢的颜色`
+
+This Vue Component is now Type Script Compatible!
 
 ## Demo
 
