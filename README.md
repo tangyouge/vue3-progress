@@ -59,7 +59,7 @@ export default {
       this.$progress.start();
       next();
     });
-
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     this.$router.afterEach((to, from) => {
       this.$progress.finish();
     });
