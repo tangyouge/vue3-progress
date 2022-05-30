@@ -1,14 +1,21 @@
-![cover](https://user-images.githubusercontent.com/11075892/98070512-4b2e7780-1e9c-11eb-885f-b13c91cee889.png)
-
-# vue3-progress
+# Vue 3 Progress Bar
 
 [![license](https://img.shields.io/npm/l/vue3-progress?color=%2351bff4)](https://revolunet.mit-license.org/) [![npm](https://img.shields.io/npm/v/vue3-progress?color=%2333efc7)](https://www.npmjs.com/package/vue3-progress) [![downloads](https://img.shields.io/npm/dm/vue3-progress?color=%23ad43a7)](https://www.npmjs.com/package/vue3-progress)
 
-`A vue3 progress bar component in which custom colors are supported`
+- Are you looking for a progress bar to show at the top of your app while you are switching pages and implements perfectly with 'vue-router'?
 
-`一款 vue3 进度条组件 支持自定义喜欢的颜色`
+- Are you looking for a progress bar to show while you are loading data?
 
-This Vue Component is now Type Script Compatible!
+- Are you looking for a "easy to implement" progress bar?
+
+- Are you looking for a beautiful progress bar?
+
+Then you have come to the right place!
+
+This progress bar is so easy to implement, and looks amazing on all apps!
+The default loading bar colors in an amazing css animation! Don't like the colors? No problem, this projet supports custom colors.
+
+This project is Vue 3 and TypeScript compatible!
 
 ## Demo
 
@@ -59,7 +66,7 @@ export default {
       this.$progress.start();
       next();
     });
-
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     this.$router.afterEach((to, from) => {
       this.$progress.finish();
     });
@@ -85,9 +92,3 @@ this.$progress.height(4) // resize the height of loading bar to 4px
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
-
-## Links
-
-[Vue.js - The Progressive JavaScript Framework](https://vuejs.org/)
-
-[vue-ins-progress-bar 一款 ins 风格的 vue 进度条组件](https://github.com/meloalright/vue-ins-progress-bar)
