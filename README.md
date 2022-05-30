@@ -88,9 +88,3 @@ this.$progress.height(4) // resize the height of loading bar to 4px
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
-
-## Links
-
-[Vue.js - The Progressive JavaScript Framework](https://vuejs.org/)
-
-[vue-ins-progress-bar 一款 ins 风格的 vue 进度条组件](https://github.com/meloalright/vue-ins-progress-bar)
